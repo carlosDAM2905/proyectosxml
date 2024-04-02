@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido [
+<!ELEMENT cliente (nombre, apellido, direccion, localidad, producto*)>
+<!ELEMENT pedido (cliente)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT producto (nombre-producto, precio)>
+<!ELEMENT nombre-producto (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST producto cantidad CDATA #REQUIRED>
+]>
+
+
+<pedido>
+    <cliente>
+        <nombre>Juan</nombre>
+        <apellido>Gutierrez</apellido>
+        <direccion>calle jaen 2 portal C</direccion>
+        <localidad>Coslada</localidad>
+        <producto cantidad="2">
+            <nombre-producto>mcpollo</nombre-producto>
+            <precio>2</precio>
+        </producto>
+        <producto cantidad="1">
+            <nombre-producto>nuggets</nombre-producto>
+            <precio>1</precio>
+        </producto>
+        <producto cantidad="3">
+            <nombre-producto>fingers</nombre-producto>
+            <precio>2</precio>
+        </producto>
+    </cliente>
+</pedido>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum [
+    <!ELEMENT curriculum (datos-personales, residencia, datos-contacto, descripcion, competencias, formacion-academica, experiencia-profesional, otros-datos)>
+    <!ELEMENT datos-personales (nombre, apellido1, apellido2, año-nacimiento)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+    <!ELEMENT año-nacimiento (#PCDATA)>
+    <!ELEMENT residencia (ciudad, pais)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT datos-contacto ((telefono+), correo-electronico, perfil-linkedin)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT correo-electronico (#PCDATA)>
+    <!ELEMENT perfil-linkedin (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT competencias ((nombre-competencia, nivel)+)>
+    <!ELEMENT nombre-competencia (#PCDATA)>
+    <!ELEMENT nivel (#PCDATA)>
+    <!ELEMENT formacion-academica (titulacion, centro-formacion, año-titulacion)>
+    <!ELEMENT titulacion (#PCDATA)>
+    <!ELEMENT centro-formacion (#PCDATA)>
+    <!ELEMENT año-titulacion (#PCDATA)>
+    <!ELEMENT experiencia-profesional (trabajo*)>
+    <!ELEMENT trabajo (puesto, empresa, año-inicio, año-fin)>
+    <!ELEMENT puesto (#PCDATA)>
+    <!ELEMENT empresa (#PCDATA)>
+    <!ELEMENT año-inicio (#PCDATA)>
+    <!ELEMENT año-fin (#PCDATA)>
+    <!ELEMENT otros-datos (permiso-conducir, disponibilidad, modalidad-preferida)>
+   <!ELEMENT permiso-conducir (#PCDATA)>
+   <!ATTLIST permiso-conducir coche-propio (SI|NO) #REQUIRED>
+   <!ELEMENT disponibilidad (#PCDATA)>
+   <!ELEMENT modalidad-preferida (#PCDATA)> 
+
+]>
+<curriculum>
+    <datos-personales>
+        <nombre>carlos</nombre>
+        <apellido1>Gómez</apellido1>
+        <apellido2>Sánchez</apellido2>
+        <año-nacimiento>1987</año-nacimiento>
+    </datos-personales>
+    <residencia>
+        <ciudad>madrid</ciudad>
+        <pais>españa</pais>
+    </residencia>
+    <datos-contacto>
+        <telefono>669255525</telefono>
+        <telefono>654585221</telefono>
+        <correo-electronico>carlos@.com</correo-electronico>
+        <perfil-linkedin>perfil1@linkd</perfil-linkedin>
+    </datos-contacto>
+    <descripcion>
+        muy trabajador y estudioso
+    </descripcion>
+    <competencias>
+        <nombre-competencia>java</nombre-competencia>
+        <nivel>basico</nivel>
+        <nombre-competencia>html</nombre-competencia>
+        <nivel>basico</nivel>
+    </competencias>
+    <formacion-academica>
+        <titulacion>dam</titulacion>
+        <centro-formacion>rey fernando</centro-formacion>
+        <año-titulacion>2025</año-titulacion>
+    </formacion-academica>
+   <experiencia-profesional>
+    <trabajo>
+        <puesto>montador</puesto>
+        <empresa>iveco</empresa>
+        <año-inicio>2000</año-inicio>
+        <año-fin>2023</año-fin>
+    </trabajo>
+   </experiencia-profesional>
+   <otros-datos>
+    <permiso-conducir coche-propio="NO" />
+    <disponibilidad>mañanas</disponibilidad>
+    <modalidad-preferida>teletrabajo</modalidad-preferida>
+   </otros-datos>
+   
+</curriculum>

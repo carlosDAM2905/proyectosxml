@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="estilos.css" ?>
+<curriculum>
+    <presentacion>CURRICULUM VITAE</presentacion>
+    <datos_personales>
+        <nombre>Carlos</nombre>
+        <apellido1>Gómez</apellido1>
+        <apellido2>Sánchez</apellido2>
+        <año_nacimiento>25-02-1987</año_nacimiento>
+        <residencia>
+            <ciudad>Madrid</ciudad>
+            <pais>España</pais>
+        </residencia>
+    </datos_personales>
+
+            <contacto>
+                <telefono>669555879</telefono>
+                <correo_electronico>carlosdam2905@gmail.com</correo_electronico>
+                <linkedin>linkedin.com/in/noTengo</linkedin>
+            </contacto>
+        
+        <descripcion>Actualmente estoy cursando el primer curso de desarrollo de aplicaciones multiplataforma y estoy interesado en encontrar un empleo relacionado con el mundo de la tecnología para ampliar conocimientos</descripcion>
+    
+    <competencias>
+        <competencia>Java</competencia>
+        <nivel>básico</nivel>
+        <competencia>HTML</competencia>
+        <nivel>básico</nivel>
+        <competencia>CSS</competencia>
+        <nivel>básico</nivel>
+    </competencias>
+
+    <formacion_academica>
+        <titulo>Prueba de acceso a ciclo formativo de grado superior</titulo>
+        <centro>CEPA San Fernando de Henares</centro>
+        <año>2023</año>
+    </formacion_academica>
+
+    <experiencia_profesional>
+        <empresa>•Iveco España</empresa>
+        <puesto>Montador de vehículos industriales</puesto>
+        <año_inicio>2006</año_inicio>
+        <año_fin>2023</año_fin>
+    </experiencia_profesional>
+</curriculum>

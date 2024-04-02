@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nota [
+<!ELEMENT nota (para,de,cabecera,cuerpo)> <!-- el elemento raíz debe tener estos cuatro elementos y además en ese orden--> 
+<!ELEMENT para (#PCDATA)>  <!-- #PCDATA significa que tiene que tener valores alfanúmericos.-->
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cabecera (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+]>
+
+<nota>
+    <para>Carlos</para>
+    <de>Ainara</de>
+    <cabecera>Examen</cabecera>
+    <cuerpo>¿Qué has sacado?</cuerpo>
+</nota>

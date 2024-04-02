@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE animales [
+  <!ELEMENT animales (animal*)>
+  <!ELEMENT animal (#PCDATA)>
+]>
+
+<animales>
+ <animal>perro caniche</animal>
+ <animal>gato siames</animal>
+</animales>

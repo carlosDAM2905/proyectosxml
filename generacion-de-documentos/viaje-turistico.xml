@@ -1,0 +1,26 @@
+<viaje-turistico>
+<cliente>
+    <nombre>Carlos</nombre>
+    <apellido1>Gómez</apellido1>
+    <apellido2>Sánchez</apellido2>
+</cliente>
+    <fecha-inicio>01-05-2025</fecha-inicio>
+    <fecha-fin>15-05-2025</fecha-fin>
+    <origen>Barcelona</origen>
+    <destino>
+        <nombre-ciudad>Génova</nombre-ciudad>
+        <nombre-hotel>Marriott</nombre-hotel>
+        <numero-noches>30</numero-noches>
+    </destino>
+    <destino>
+        <nombre-ciudad>Roma</nombre-ciudad>
+        <nombre-hotel>Coliseo</nombre-hotel>
+        <numero-noches>30</numero-noches>
+    </destino>
+    <destino>
+        <nombre-ciudad>Bahamas</nombre-ciudad>
+        <nombre-hotel>Playa y Sol</nombre-hotel>
+        <numero-noches>60</numero-noches>
+    </destino>
+    <precio>3400</precio>
+</viaje-turistico>

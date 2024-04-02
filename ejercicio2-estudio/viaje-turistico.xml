@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE viaje-turistico [
+<!ELEMENT viaje-turistico (cliente, fecha-inicio, fecha-fin, origen, (destino+), precio-viaje)>
+<!ELEMENT cliente (nombre, apellido1, apellido2)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT fecha-inicio (#PCDATA)>
+<!ELEMENT fecha-fin (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (ciudad, hotel, estancia)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT hotel (#PCDATA)>
+<!ELEMENT estancia (#PCDATA)>
+<!ELEMENT precio-viaje (#PCDATA)>
+
+]>
+<viaje-turistico>
+    <cliente>
+        <nombre>Carlos</nombre>
+        <apellido1>Gómez</apellido1>
+        <apellido2>Sánchez</apellido2>
+    </cliente>
+    <fecha-inicio>01-01-2024</fecha-inicio>
+    <fecha-fin>01-02-2024-</fecha-fin>
+    <origen>Madrid</origen>
+
+    <destino>
+        <ciudad>Lisboa</ciudad>
+        <hotel>NH</hotel>
+        <estancia>5 noches</estancia>
+    </destino>
+    <destino>
+        <ciudad>Segovia</ciudad>
+        <hotel>marriott</hotel>
+        <estancia>25 noches</estancia>
+    </destino>
+    <precio-viaje>2000 euros</precio-viaje>
+</viaje-turistico>

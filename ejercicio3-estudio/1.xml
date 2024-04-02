@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuerto [
+    <!ELEMENT aeropuerto (nombre, vuelos, fecha)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT vuelos (vuelo+)>
+    <!ELEMENT vuelo (diario?, origen, destino, hora-salida, hora-llegada)>
+    <!ATTLIST vuelo codigo ID #REQUIRED>
+    <!ATTLIST vuelo estado (C|E|R) "E">
+    <!ELEMENT diario EMPTY>
+    <!ELEMENT origen (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT hora-salida (#PCDATA)>
+    <!ELEMENT hora-llegada (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+]>
+<aeropuerto>
+<nombre>barajas</nombre>
+<vuelos>
+    <vuelo codigo="Airbus01" estado="R">
+    <diario />
+        <origen>madrid</origen>
+        <destino>barcelona</destino>
+        <hora-salida>23:07</hora-salida>
+        <hora-llegada>24:00</hora-llegada>
+    </vuelo>
+</vuelos>
+<fecha>23/05/2000</fecha>
+</aeropuerto>

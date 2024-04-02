@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nota SYSTEM "externa.dtd">
+<nota>
+    <para>Ivan</para>
+    <de>Carlos</de>
+    <cabecera>direccion</cabecera>
+    <cuerpo>mejorada</cuerpo>
+</nota>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="expedientes">
+        <!--  La estructura del documento XML es la siguiente:
+ Un documento contiene un conjunto de expedientes.
+ Cada expediente contiene el nombre de la titulaciön, el nombre del estudiante y un
+ conjunto de mödulos por cada estudiante.
+ Cada mödulo tiene un atributo con el nombre, otro atributo que indica si el mödulo
+ ya ha Sido aprobado y un tercer atributo que informa del curso al que pertenece el
+ mödulo y que puede tomar los valores "Primero" o "Segundo"-->
+
+ <!--expedientes contiene dos elementos complejos llamados expediente, expediente contiene dos elementos simples (titulación y estudiante) y otro complejo llamado modulos. modulos contiene tres elementos complejos llamados modulo con tres atributos cada uno-->
+        
+<xs:complexType>
+    <xs:sequence>
+        <xs:element name="expediente" maxOccurs="unbounded">  <!-- aqui comienza expediente-->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulacion" type="xs:string"/>
+                <xs:element name="estudiante" type="xs:string"/>
+                <xs:element name="modulos"> <!-- aqui comienza modulos-->
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="modulo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" type="xs:string"/>
+                                    <xs:attribute name="aprobado" type="xs:boolean"/>
+                                    <xs:attribute name="curso"> <!--hay que hacer un enumerado para elegir curso (Primero o Segundo)-->
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="Primero"/>
+                                                <xs:enumeration value="Segundo"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

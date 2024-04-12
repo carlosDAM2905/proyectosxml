@@ -10,7 +10,7 @@
                             <xs:element name="calle" type="xs:string"/>
                               <xs:element name="numero">
                                 <xs:simpleType>
-                                    <xs:restriction base="xs:int">
+                                    <xs:restriction base="xs:integer">
                                         <xs:minInclusive value="0"/>
                                         <xs:maxInclusive value="500"/>
                                     </xs:restriction>

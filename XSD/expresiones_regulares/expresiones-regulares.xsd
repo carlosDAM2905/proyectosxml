@@ -10,7 +10,7 @@
                             <xs:element name="expresion1">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="Capítulo [0-9]"></xs:pattern>
+                                        <xs:pattern value="Capítulo [0-9]"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -18,7 +18,7 @@
                              <xs:element name="expresion2">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="Capítulo [0-9][0-9]?"></xs:pattern>
+                                        <xs:pattern value="Capítulo [0-9][0-9]?"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                              </xs:element>
@@ -26,7 +26,7 @@
                                 <xs:element name="expresion3">
                                     <xs:simpleType>
                                         <xs:restriction base="xs:string">
-                                            <xs:pattern value="Capítulo [1-9][0-9]?"></xs:pattern>
+                                            <xs:pattern value="Capítulo [1-9][0-9]?"/>
                                         </xs:restriction>
                                     </xs:simpleType>
                                 </xs:element>
@@ -50,7 +50,7 @@
                                 <xs:element name="expresion6">
                                     <xs:simpleType>
                                         <xs:restriction base="xs:string">
-                                            <xs:pattern value="AB*C"/>
+                                            <xs:pattern value="AB{2,5}C"/>
                                         </xs:restriction>
                                     </xs:simpleType>
                                 </xs:element>

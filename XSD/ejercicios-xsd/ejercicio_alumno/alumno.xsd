@@ -26,7 +26,7 @@
             <xs:attribute name="dni">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="\d{8}[A-Z]"></xs:pattern> <!-- Aquí también podríamos utilizar [0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][A-Z] pero es más largo -->
+                        <xs:pattern value="\d{8}[A-Z]"/> <!-- Aquí también podríamos utilizar [0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][A-Z] pero es más largo -->
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>

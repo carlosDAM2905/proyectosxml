@@ -4,7 +4,7 @@
         <xs:complexType>
             <xs:sequence>
 
-                <xs:element name="info" minOccurs="1" maxOccurs="1">
+                <xs:element name="info">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="titulo" type="xs:string"/>

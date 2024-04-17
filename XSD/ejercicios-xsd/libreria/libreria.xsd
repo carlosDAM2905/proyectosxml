@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Recuerda! para definir una única vez el telefono y luego poder usarlo en el resto del esquema, lo definimos antes del elemento raíz y luego en las declaraciones de los elementos que vayamos a usarlo en vez de name="telefono" ponemos ref="telefono" para hacer referencia a la definición que hemos hecho al principio de todo-->
+<xs:element name="telefono">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+    <xs:element name="libreria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="codigo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:pattern value="\d{1,4}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="direccion" type="xs:string"/>
+               <xs:element ref="telefono"/>
+                <xs:element name="propietario">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element ref="telefono" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="xs:string"/>
+                            <xs:element name="autor" type="xs:string"/>
+                            <xs:element name="formato" minOccurs="0">
+                               <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Rústica"/>
+                                    <xs:enumeration value="tapa blanda"/>
+                                    <xs:enumeration value="tapa dura"/>
+                                </xs:restriction>
+                               </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="publicacion" type="xs:integer"/>
+                            <xs:element name="precio" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

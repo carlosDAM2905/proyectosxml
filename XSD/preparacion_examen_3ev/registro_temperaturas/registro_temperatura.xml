@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registro_temperatura
+    xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="registro_temperatura.xsd">
+    
+    <provincia>Zamora</provincia>
+    <fecha>2022-01-07</fecha>
+    <temperatura_minima>-5</temperatura_minima>
+    <temperatura_maxima>4</temperatura_maxima>
+    <incidencias>
+        <incidencia nombre="frio" severidad="alta"/>
+        <incidencia nombre="nieve" severidad="alta"/>
+        <incidencia nombre="lluvia" severidad="media"/>
+    </incidencias>
+</registro_temperatura>
+
+
+
+
+
+
+
+
+
+<!-- El elemento principal contiene un registro de temperaturas con el nombre de la provincia, la fecha del registro, la temperatura minima y maxima y una relaciön de
+incidencias.-->
+
+<!--La fecha de registro debe ser una fecha välida. -->
+
+<!--La temperatura minima no debe ser inferior a —50 oc. -->
+
+<!-- La temperatura mäxima no debe ser superior a 50 oc.-->
+
+<!-- El nümero de incidencias no tiene limite.-->
+
+<!-- Las incidencias tienen un nombre que puede ser "frio", "nieve", "Iluvia" o "calor".-->
+
+<!--Las incidencias tienen una severidad que puede ser "alta", "media" o "baja". -->

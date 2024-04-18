@@ -3,7 +3,6 @@
     <xs:element name="faq">
         <xs:complexType>
             <xs:sequence>
-
                 <xs:element name="info">
                     <xs:complexType>
                         <xs:sequence>
@@ -12,8 +11,8 @@
                             <xs:element name="email" type="xs:string" minOccurs="0"/>
                             <xs:element name="version" minOccurs="0">
                                 <xs:simpleType>
-                                    <xs:restriction base="xs:double">
-                                        <xs:pattern value="[0-9][0-9]?\.[0-9][0-9]?"/>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]+\.[0-9]+"/> <!-- la barra \ es un caracter de escape para que no interprete . como "cualquier caracter excepto un salto de linea" sino que lo tome literalmente como un punto-->
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>

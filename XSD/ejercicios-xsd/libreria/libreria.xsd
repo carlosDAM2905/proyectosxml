@@ -15,7 +15,8 @@
                 <xs:element name="codigo">
                     <xs:simpleType>
                         <xs:restriction base="xs:integer">
-                            <xs:pattern value="\d{1,4}"/>
+                            <xs:minInclusive value="1000"/>
+                            <xs:maxInclusive value="9999"/>
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
@@ -25,7 +26,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nombre" type="xs:string"/>
-                            <xs:element ref="telefono" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            <xs:element ref="telefono" minOccurs="0" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -44,7 +45,8 @@
                                </xs:simpleType>
                             </xs:element>
                             <xs:element name="publicacion" type="xs:integer"/>
-                            <xs:element name="precio" type="xs:string"></xs:element>
+                            <xs:element name="precio" type="xs:double"/>
+                            <xs:element name="cantidad" type="xs:integer" minOccurs="0"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
